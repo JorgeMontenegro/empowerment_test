@@ -2,6 +2,7 @@ import {
   Injectable,
   InternalServerErrorException,
   Logger,
+  NotFoundException,
 } from '@nestjs/common';
 import { awsConfig } from 'config/aws.config';
 import * as AWS from 'aws-sdk';
@@ -57,7 +58,6 @@ export default class RestaurantRepositoryDinamodb {
     restaurants.id = uuid();
     restaurants.createdAt = new Date().toISOString();
     restaurants.updatedAt = new Date().toISOString();
-    console.log(restaurants);
     await this.dynamoDB
       .put({
         TableName: this.table,
@@ -68,9 +68,7 @@ export default class RestaurantRepositoryDinamodb {
       .then()
       .catch((err) => {
         this.logger.error(err);
-        throw new InternalServerErrorException(
-          'Error al tratar de crear el restaurante',
-        );
+        throw new NotFoundException('No se encontró el restaurante');
       });
     return await this.getRestaurant(restaurants.id);
   }
