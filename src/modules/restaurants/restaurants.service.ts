@@ -28,4 +28,10 @@ export class RestaurantsService {
   ): Promise<RestaurantsDto> {
     return this.restaurantRepository.updateRestaurant(id, body);
   }
+
+  public async getRestaurantByCategories(
+    categories: string[],
+  ): Promise<RestaurantsDto[]> {
+    return this.restaurantRepository.getRestaurantByCategories(categories);
+  }
 }

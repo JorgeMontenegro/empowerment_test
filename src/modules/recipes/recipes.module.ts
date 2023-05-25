@@ -6,5 +6,6 @@ import RecipeRepositoryDinamodb from 'modules/recipes/adapters/recipe.repository
 @Module({
   controllers: [RecipesController],
   providers: [RecipesService, RecipeRepositoryDinamodb],
+  exports: [RecipesService],
 })
 export class RecipesModule {}

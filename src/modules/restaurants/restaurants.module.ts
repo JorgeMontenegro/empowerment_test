@@ -5,7 +5,7 @@ import RestaurantRepositoryDinamodb from 'modules/restaurants/adapters/restauran
 
 @Module({
   providers: [RestaurantsService, RestaurantRepositoryDinamodb],
-  exports: [RestaurantsService],
   controllers: [RestaurantsController],
+  exports: [RestaurantsService],
 })
 export class RestaurantsModule {}
