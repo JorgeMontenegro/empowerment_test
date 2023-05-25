@@ -1,4 +1,4 @@
-import { RestaurantCategory } from 'modules/restaurants/entities/restaurant.entity';
+import { RestaurantCategory } from '../../restaurants/entities/restaurant.entity';
 
 export interface RecipeEntity {
   id: string;

@@ -1,7 +1,7 @@
 import { Body, Controller, Post, Res } from '@nestjs/common';
-import { BrowserService } from 'modules/browser/browser.service';
-import { BrowserInputDto } from 'modules/browser/dto/browser.input.dto';
-import { BrowserOutputDto } from 'modules/browser/dto/browser.output.dto';
+import { BrowserService } from './browser.service';
+import { BrowserInputDto } from './dto/browser.input.dto';
+import { BrowserOutputDto } from './dto/browser.output.dto';
 
 @Controller('browser')
 export class BrowserController {

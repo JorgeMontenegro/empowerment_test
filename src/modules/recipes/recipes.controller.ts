@@ -1,6 +1,6 @@
 import { Controller, Get, Res, Param, Post, Put, Body } from '@nestjs/common';
-import { RecipesService } from 'modules/recipes/recipes.service';
-import { RecipesDto } from 'modules/recipes/dtos/recipes.dto';
+import { RecipesService } from './recipes.service';
+import { RecipesDto } from './dtos/recipes.dto';
 
 @Controller('recipes')
 export class RecipesController {

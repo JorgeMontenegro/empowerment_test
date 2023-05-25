@@ -1,5 +1,5 @@
 import { IsEnum, IsOptional, IsString } from 'class-validator';
-import { RestaurantCategory } from 'modules/restaurants/entities/restaurant.entity';
+import { RestaurantCategory } from '../../restaurants/entities/restaurant.entity';
 
 export class BrowserInputDto {
   @IsOptional()

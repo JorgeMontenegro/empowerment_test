@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import RecipeRepositoryDinamodb from 'modules/recipes/adapters/recipe.repository.dinamodb';
-import { RecipesDto } from 'modules/recipes/dtos/recipes.dto';
+import RecipeRepositoryDinamodb from './../recipes/adapters/recipe.repository.dinamodb';
+import { RecipesDto } from './dtos/recipes.dto';
 import { plainToInstance } from 'class-transformer';
-import { RestaurantCategory } from 'modules/restaurants/entities/restaurant.entity';
+import { RestaurantCategory } from '../restaurants/entities/restaurant.entity';
 
 @Injectable()
 export class RecipesService {

@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { RecipesService } from 'modules/recipes/recipes.service';
-import { RestaurantsService } from 'modules/restaurants/restaurants.service';
-import { BrowserInputDto } from 'modules/browser/dto/browser.input.dto';
-import { BrowserOutputDto } from 'modules/browser/dto/browser.output.dto';
+import { RecipesService } from '../recipes/recipes.service';
+import { RestaurantsService } from '../restaurants/restaurants.service';
+import { BrowserInputDto } from './dto/browser.input.dto';
+import { BrowserOutputDto } from './dto/browser.output.dto';
 import { plainToInstance } from 'class-transformer';
 
 @Injectable()

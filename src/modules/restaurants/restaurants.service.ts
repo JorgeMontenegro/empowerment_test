@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { RestaurantsDto } from 'modules/restaurants/dtos/restaurants.dto';
-import RestaurantRepositoryDinamodb from 'modules/restaurants/adapters/restaurant.repository.dinamodb';
+import { RestaurantsDto } from './dtos/restaurants.dto';
+import RestaurantRepositoryDinamodb from './adapters/restaurant.repository.dinamodb';
 import { plainToInstance } from 'class-transformer';
 
 @Injectable()

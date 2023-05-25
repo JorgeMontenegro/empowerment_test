@@ -5,7 +5,7 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
-import { RestaurantCategory } from 'modules/restaurants/entities/restaurant.entity';
+import { RestaurantCategory } from '../entities/restaurant.entity';
 
 export class RestaurantsDto {
   @IsOptional()

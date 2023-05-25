@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import {
   ArgumentsHost,
   BadRequestException,
@@ -8,7 +9,6 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { BaseExceptionFilter } from '@nestjs/core';
-
 @Catch()
 export class AllExceptionsFilter extends BaseExceptionFilter {
   #logger = new Logger(AllExceptionsFilter.name);

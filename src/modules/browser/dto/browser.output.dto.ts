@@ -1,6 +1,6 @@
 import { IsObject, IsOptional } from 'class-validator';
-import { RecipesDto } from 'modules/recipes/dtos/recipes.dto';
-import { RestaurantsDto } from 'modules/restaurants/dtos/restaurants.dto';
+import { RecipesDto } from '../../recipes/dtos/recipes.dto';
+import { RestaurantsDto } from '../../restaurants/dtos/restaurants.dto';
 
 export class BrowserOutputDto {
   @IsOptional()

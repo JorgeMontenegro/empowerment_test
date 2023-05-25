@@ -4,13 +4,13 @@ import {
   Logger,
   NotFoundException,
 } from '@nestjs/common';
-import { awsConfig } from 'config/aws.config';
+import { awsConfig } from '../../../config/aws.config';
 import * as AWS from 'aws-sdk';
-import { RestaurantsDto } from 'modules/restaurants/dtos/restaurants.dto';
+import { RestaurantsDto } from '../dtos/restaurants.dto';
 import { plainToInstance } from 'class-transformer';
 import { v4 as uuid } from 'uuid';
-import { RestaurantEntity } from 'modules/restaurants/entities/restaurant.entity';
-import RestaurantMapper from 'modules/restaurants/mappers/restaurant.mapper';
+import { RestaurantEntity } from '../entities/restaurant.entity';
+import RestaurantMapper from './../mappers/restaurant.mapper';
 
 @Injectable()
 export default class RestaurantRepositoryDinamodb {

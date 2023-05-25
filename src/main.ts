@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { HttpAdapterHost, NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './exceptions/http-exception.filter';

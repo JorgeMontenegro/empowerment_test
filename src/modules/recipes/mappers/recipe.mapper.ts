@@ -1,4 +1,4 @@
-import { RecipeEntity } from 'modules/recipes/entities/recipe.entity';
+import { RecipeEntity } from '../entities/recipe.entity';
 
 export default class RecipeMapper {
   public static toInputDomain(recipeEntity: RecipeEntity): any {

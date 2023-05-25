@@ -1,6 +1,6 @@
 import { Body, Controller, Post, Res, Get, Put, Param } from '@nestjs/common';
-import { RestaurantsService } from 'modules/restaurants/restaurants.service';
-import { RestaurantsDto } from 'modules/restaurants/dtos/restaurants.dto';
+import { RestaurantsService } from './restaurants.service';
+import { RestaurantsDto } from './dtos/restaurants.dto';
 
 @Controller('restaurants')
 export class RestaurantsController {
